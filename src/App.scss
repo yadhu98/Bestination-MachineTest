@@ -1,0 +1,317 @@
+$font-quicksand: 'Quicksand',
+sans-serif;
+$font-supreme: 'Poppins',
+sans-serif; // Using Poppins as a substitute
+$font-caveat: 'Caveat',
+cursive;
+$font-roboto: 'Roboto',
+sans-serif;
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$highlight-color: #ff4500;
+$background-white: #E9E9E9;
+.landing-page {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    #backdrop {
+        width: 250px;
+        height: 150px;
+        border-radius: 0px 0px 50%;
+        background-color: #FFFFFF;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.4;
+        filter: blur(1rem);
+    }
+    #background-trees {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 850px;
+    }
+    .hero {
+        position: relative;
+        height: 100vh;
+        background: url('./assets/hot-air-balloon-realistic-dreamscape\ 1.png') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        .hero-content-mobile {
+            display: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            h1 {
+                font-size: 4.5rem;
+                margin-top: 5%;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+                font-family: $font-quicksand;
+                font-weight: 700;
+                .highlight {
+                    color: $highlight-color;
+                    font-family: $font-caveat;
+                    font-weight: 700;
+                    font-size: 5.5rem;
+                }
+                .visa {
+                    color: $highlight-color;
+                    font-family: $font-caveat;
+                    font-weight: 700;
+                    font-size: 5.5rem;
+                }
+            }
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .about-us {
+        padding: 4rem 2rem;
+        text-align: center;
+        background-color: #f8f9fa;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        .learn-more-btn {
+            padding: 0.8rem 1.5rem;
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    .destinations {
+        padding: 4rem 2rem;
+        text-align: center;
+        background-color: #fff;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            .destination-card {
+                background: #fff;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem 0 0.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                    color: $secondary-color;
+                    padding: 0 1rem 1rem;
+                }
+            }
+        }
+    }
+    .services {
+        padding: 4rem 2rem;
+        text-align: center;
+        background-color: #f8f9fa;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            .service-card {
+                padding: 2rem;
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                span {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                    display: block;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 0.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .testimonials {
+        padding: 4rem 2rem;
+        text-align: center;
+        background-color: #fff;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            .testimonial-card {
+                background: #f8f9fa;
+                padding: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                p {
+                    font-size: 1.1rem;
+                    margin-bottom: 1rem;
+                    color: $secondary-color;
+                }
+                span {
+                    font-weight: bold;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .footer {
+        background-color: white;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 2rem;
+        p {
+            margin: 0 0 1rem;
+        }
+        .footer-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media(min-width: 375px) {
+    .landing-page {
+        .header {
+            display: flex;
+            gap: 30px;
+            img:first-child {
+                height: 30px;
+            }
+            .nav {
+                display: none;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        .hero {
+            background: url('./assets/hot-air-balloon-realistic-dreamscape\ 1.png') no-repeat center center/cover;
+            .hero-content {
+                display: none;
+            }
+            .hero-content-mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    font-size: 2rem;
+                    font-family: $font-quicksand;
+                    width: 260px;
+                    margin-top: 140%;
+                    .highlight {
+                        color: $highlight-color;
+                        font-family: $font-caveat;
+                        font-weight: 700;
+                        font-size: 2.5rem;
+                    }
+                    .visa {
+                        color: $highlight-color;
+                        font-family: $font-caveat;
+                        font-weight: 700;
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width :1024px) {
+    .landing-page {
+        #background-trees {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 700px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img:first-child {
+                height: 70px;
+            }
+            .nav {
+                display: flex;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        .hero {
+            background: url('./assets/hot-air-balloon-realistic-dreamscape\ 1.png') no-repeat center center/cover;
+            .hero-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    font-size: 4rem;
+                    font-family: $font-quicksand;
+                    .highlight {
+                        color: $highlight-color;
+                        font-family: $font-caveat;
+                        font-weight: 700;
+                        font-size: 4.5rem;
+                    }
+                    .visa {
+                        color: $highlight-color;
+                        font-family: $font-caveat;
+                        font-weight: 700;
+                        font-size: 4.5rem;
+                    }
+                }
+            }
+            .hero-content-mobile {
+                display: none;
+            }
+        }
+    }
+}

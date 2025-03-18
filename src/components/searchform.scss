@@ -1,0 +1,120 @@
+$font-quicksand: 'Quicksand',
+sans-serif;
+$font-supreme: 'Poppins',
+sans-serif; // Using Poppins as a substitute
+$font-caveat: 'Caveat',
+cursive;
+$font-roboto: 'Roboto',
+sans-serif;
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$highlight-color: #ff4500;
+$background-white: #E9E9E9;
+$color-off-blue: #84BCDB;
+$font-gray: #757575;
+.search-form {
+    top: 150px;
+    z-index: 2;
+    background: rgba(255, 255, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 1400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    #search-form-heading {
+        font-size: 1.25rem;
+        color: $color-off-blue;
+        margin: 0;
+    }
+    p {
+        margin: 0 0 1rem;
+        font-size: 1.25rem;
+        color: $font-gray;
+        text-align: left;
+        font-family: $font-quicksand;
+        &:first-child {
+            font-weight: bold;
+        }
+    }
+    .form-group {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: flex-end;
+        .search-filters-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            div {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                span {
+                    color: black;
+                    font-weight: 700;
+                }
+                img {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            .input-group {
+                display: flex;
+                align-items: center;
+                background: white;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 0.5rem;
+                width: 250px;
+                span {
+                    margin-right: 0.5rem;
+                    color: $secondary-color;
+                }
+                input,
+                select {
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 0.5rem;
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+        .enquire-btn {
+            padding: 0.8rem 1.5rem;
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .search-form {
+        width: 300px;
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .search-form {
+        width: 1500px;
+        top: 100px;
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+}
